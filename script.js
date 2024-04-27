@@ -18,9 +18,6 @@ window.onload = function () {
     board.width = cols * boxSize
     context = board.getContext("2d")
 
-    for (let i = 0; i < initialSnakeLength; i++) {
-        snakeBody.push([snakeX - i * boxSize, snakeY]);
-    }
     randomFoodPlace()
     window.addEventListener('keyup', changeDirection)
     setInterval(() => {
